@@ -124,18 +124,18 @@ const CheckOutAndAddressContainer = styled.div`
     right:0; */
     /* z-index:-1; */
     button{
-        border: 1px solid rgb(26, 115, 232);
-        border-radius: 10px;
-        height: 30px;
-        width:90px;
-        margin-top: 10px;
-        color: rgb(26, 115, 232);
-        background-color: white;
-        outline: none;
+        border: 1px solid rgb(26, 115, 232) !important;
+        border-radius: 10px !important;
+        height: 30px !important;
+        width:90px !important;
+        margin-top: 10px !important;
+        color: rgb(26, 115, 232) !important;
+        background-color: white !important;
+        outline: none !important;
         &:hover{
-            color: white;
-            background-color: rgb(26, 115, 232);
-            cursor: pointer;
+            color: white !important;
+            background-color: rgb(26, 115, 232) !important;
+            cursor: pointer !important;
         }
     }
 `;
