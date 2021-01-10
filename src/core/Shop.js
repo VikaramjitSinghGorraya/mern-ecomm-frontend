@@ -219,6 +219,11 @@ const SearchResults = styled.div`
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        ${Card}{
+            div{
+                border: none;  
+            }
+    }
     }
     /* padding: 1.25rem; */
 `;
