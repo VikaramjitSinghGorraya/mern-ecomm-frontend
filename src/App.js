@@ -12,7 +12,7 @@ import {BrowserRouter, Switch, Route} from 'react-router-dom'
 
 function App() {
   return (
-    <div className="App">
+    <>
       <BrowserRouter>
         <Switch>
           <Route  path = '/'  exact component = {Home}/>
@@ -25,10 +25,9 @@ function App() {
           <Route  path = '/userdashboard/:userId' exact  component = {UserDashboard}/>
           <Route  path = '/userdashboard/update/:userId' exact component = {UpdateUser}/>
         </Switch>
-       
       </BrowserRouter>
       <Menu/>
-    </div>
+    </>
   );
 }
 
