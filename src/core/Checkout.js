@@ -86,7 +86,7 @@ const Checkout = ({ products, setRun = f => f, run = undefined }) =>{
                     {products.length >= 1 ?
                         <StripeCheckout
                         token={buy}
-                        stripeKey= {process.env.STRIPE_PUBLIC_KEY}
+                        stripeKey= {process.env.REACT_APP_STRIPE_KEY}
                         shippingAddress
                         amount = {totalPrice() * 100}
                       >
