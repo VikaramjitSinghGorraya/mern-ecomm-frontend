@@ -127,7 +127,7 @@ const CheckOutAndAddressContainer = styled.div`
         border: 1px solid rgb(26, 115, 232) !important;
         border-radius: 10px !important;
         height: 30px !important;
-        width:100% !important;
+        width:30rem !important;
         margin-top: 10px !important;
         color: rgb(26, 115, 232) !important;
         background-color: white !important;
