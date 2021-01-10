@@ -49,7 +49,7 @@ const Menu = () =>{
             <GitLinkContainer>
             <p>DEVELOPED BY <span> VIKARAMJIT SINGH</span></p>
             <hr/>
-            <a to = "https://github.com/VikaramjitSinghGorraya" target = "_blank" ><i class="fa fa-github">KNOW MORE</i></a>
+            <a href = "https://github.com/VikaramjitSinghGorraya" target = "_blank" ><i class="fa fa-github">KNOW MORE</i></a>
             </GitLinkContainer>
         </OuterContainer>
     )
