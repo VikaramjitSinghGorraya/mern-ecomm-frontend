@@ -91,6 +91,7 @@ const StyledSekelton = styled(Skeleton)`
         min-width: 16rem;
         max-height: 20rem;
         width: 16rem;
+        margin: 0 1.25rem;
     }
 `;
 const Carrd = styled.div`
