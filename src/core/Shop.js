@@ -96,10 +96,10 @@ const Shop = () =>{
                     </FiltersContainer>
                     <SearchResults>
                         {filteredResults.length === 0 && products.map((product, index) =>(
-                                <Card key = {index} product = {product}/>
+                                <Card border = 'none' key = {index} product = {product}/>
                             ))}
                             { filteredResults.length!==0 && filteredResults.map((product, index) =>(
-                                    <Card key = {index} product = {product}/>
+                                    <Card  border = 'none' key = {index} product = {product}/>
                             ))}
                     
                     </SearchResults>
@@ -219,11 +219,6 @@ const SearchResults = styled.div`
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        ${Card}{
-            div{
-                border: none;  
-            }
-    }
     }
     /* padding: 1.25rem; */
 `;
