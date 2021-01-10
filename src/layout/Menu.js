@@ -49,7 +49,7 @@ const Menu = () =>{
             <GitLinkContainer>
             <p>DEVELOPED BY <span> VIKARAMJIT SINGH</span></p>
             <hr/>
-            <AccessiblityLink to = "https://github.com/VikaramjitSinghGorraya" target = "_blank" ><i class="fa fa-github">KNOW MORE</i></AccessiblityLink>
+            <a to = "https://github.com/VikaramjitSinghGorraya" target = "_blank" ><i class="fa fa-github">KNOW MORE</i></a>
             </GitLinkContainer>
         </OuterContainer>
     )
@@ -215,6 +215,13 @@ const SingingContainer = styled.div`
 const GitLinkContainer = styled.div`
     text-align: center;
     color: white;
+    a{
+        text-decoration: none;
+        color: white;
+        i{
+            margin-right: 2px;
+        }
+    }
     p{
         font-size: 0.8rem;
     }
