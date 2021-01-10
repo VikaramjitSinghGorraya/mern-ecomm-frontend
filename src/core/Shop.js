@@ -219,6 +219,7 @@ const SearchResults = styled.div`
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        padding-right: 1.25rem;
     }
     /* padding: 1.25rem; */
 `;
