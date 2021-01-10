@@ -13,7 +13,6 @@ import {BrowserRouter, Switch, Route} from 'react-router-dom'
 function App() {
   return (
     <>
-      <BrowserRouter>
         <Switch>
           <Route  path = '/'  exact component = {Home}/>
           <Route  path = '/signin' exact component = {Signin}/>
@@ -26,8 +25,6 @@ function App() {
           <Route  path = '/userdashboard/update/:userId' exact component = {UpdateUser}/>
         </Switch>
         <Menu/>
-      </BrowserRouter>
-     
     </>
   );
 }
