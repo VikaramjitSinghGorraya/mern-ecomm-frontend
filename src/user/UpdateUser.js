@@ -19,7 +19,7 @@ const UpdateUser = (props) =>{
 
     const getToken = () =>{
         if(sessionStorage.getItem('token')){
-            axios.get(`http://localhost:4000/api/user/${props.match.params.userId}`, { headers: { "Authorization": `Bearer ${JSON.parse(sessionStorage.getItem('token')).token}` } })
+            axios.get(`https://myecommstore.herokuapp.com/api/user/${props.match.params.userId}`, { headers: { "Authorization": `Bearer ${JSON.parse(sessionStorage.getItem('token')).token}` } })
                 .then(res => setUserData({...userData, name: res.data.name, email: res.data.email }) )
                 .catch(err => console.log(err))
         }
@@ -31,7 +31,7 @@ const UpdateUser = (props) =>{
             email: userData.email,
             password: userData.password
         }
-        axios.put(`http://localhost:4000/api/user/${props.match.params.userId}`, user, { headers: { "Authorization": `Bearer ${JSON.parse(sessionStorage.getItem('token')).token}` } })
+        axios.put(`https://myecommstore.herokuapp.com/api/user/${props.match.params.userId}`, user, { headers: { "Authorization": `Bearer ${JSON.parse(sessionStorage.getItem('token')).token}` } })
         .then(res => {
             console.log(res.data)
             let auth = JSON.parse(sessionStorage.getItem('token'))

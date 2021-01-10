@@ -37,7 +37,7 @@ const Shop = () =>{
 
     const loadProductsBySearchedName = (e) =>{
         e.preventDefault()
-        axios.post('http://localhost:4000/api/products/search', searchBarData)
+        axios.post('https://myecommstore.herokuapp.com/api/products/search', searchBarData)
             .then(res => setFilteredResults(res.data.data))
             .catch(err => console.log(err))
     }
@@ -45,7 +45,7 @@ const Shop = () =>{
     const loadFilteredResults = filters => {
         const data = {filters}
         if(data.filters){
-            axios.post('http://localhost:4000/api/products/by/search', data)
+            axios.post('https://myecommstore.herokuapp.com/api/products/by/search', data)
             .then(res =>{
                 setFilteredResults( res.data.data)
             } )

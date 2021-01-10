@@ -52,7 +52,7 @@ const Card = ({
                 {shouldRedirect(redirect)}
                 <ImageAndDescription>
                     <ImageDiv>
-                        <img src = {'http://localhost:4000/api/product/photo/'+`${product._id}`} alt='img'/>
+                        <img src = {'https://myecommstore.herokuapp.com/api/product/photo/'+`${product._id}`} alt='img'/>
                     </ImageDiv>
                     <DescriptionDiv>
                         <p>{product.description.substring(0,15)}...</p>

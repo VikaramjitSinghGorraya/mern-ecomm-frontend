@@ -15,7 +15,7 @@ const RelatedProductsCards = ({product}) =>{
     return (
             <Card>
                 <ImageContainer>
-                    <img src = {`http://localhost:4000/api/product/photo/${product._id}`}/>
+                    <img src = {`https://myecommstore.herokuapp.com/api/product/photo/${product._id}`}/>
                 </ImageContainer>
                 <DescriptionContainer>
                     {showRelatedProduct()}

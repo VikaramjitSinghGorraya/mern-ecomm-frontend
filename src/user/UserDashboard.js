@@ -17,7 +17,7 @@ const UserDashboard = (props) =>{
     const [orderedProductData, setOrderedProductData] = useState([])
     const getToken = () =>{
         if(sessionStorage.getItem('token')){
-            axios.get(`http://localhost:4000/api/user/${props.match.params.userId}`, { headers: { "Authorization": `Bearer ${JSON.parse(sessionStorage.getItem('token')).token}` } })
+            axios.get(`https://myecommstore.herokuapp.com/api/user/${props.match.params.userId}`, { headers: { "Authorization": `Bearer ${JSON.parse(sessionStorage.getItem('token')).token}` } })
                 .then(res => setUserData({...userData, name: res.data.name, email: res.data.email }) )
                 .catch(err => console.log(err))
         }

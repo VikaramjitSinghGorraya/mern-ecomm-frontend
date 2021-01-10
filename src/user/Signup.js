@@ -22,7 +22,7 @@ const Signup = () =>{
 
     const submitForm = (e) =>{
         e.preventDefault()
-        axios.post('http://localhost:4000/api/signup', userData)
+        axios.post('https://myecommstore.herokuapp.com/api/signup', userData)
              .then(res => setUserData({...userData, name:'', email: '', password:'', message: 'Account Created! Please Signin', success: true}))
              .catch( error=> setUserData({...userData, message:error.response.data.error, error: true}))
     }

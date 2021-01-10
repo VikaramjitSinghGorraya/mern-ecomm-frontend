@@ -49,7 +49,7 @@ const ViewProduct = (props) =>{
             <OuterContainer className = 'animate__animated animate__fadeIn'>
                 <CurrentProudctContainer>
                     <ImageContainer>
-                        <img src = {`http://localhost:4000/api/product/photo/${productId}`} alt = 'product'/>
+                        <img src = {`https://myecommstore.herokuapp.com/api/product/photo/${productId}`} alt = 'product'/>
                     </ImageContainer>
                     <hr/>
                     <DetailsContainer>
