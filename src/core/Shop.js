@@ -214,5 +214,5 @@ const SearchResults = styled.div`
     grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr)); 
     justify-content: center;
     align-items: center;
-    padding: 1.25rem;
+    /* padding: 1.25rem; */
 `;
