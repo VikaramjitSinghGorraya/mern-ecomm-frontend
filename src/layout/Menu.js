@@ -58,7 +58,7 @@ const Menu = () =>{
 export default Menu;
 
 const OuterContainer = styled.div`
-    width: 80%;
+    width: 90%;
     height:55px;
     margin: auto ;
     position: fixed;

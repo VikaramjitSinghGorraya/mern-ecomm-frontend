@@ -222,3 +222,4 @@ const SearchResults = styled.div`
     }
     /* padding: 1.25rem; */
 `;
+

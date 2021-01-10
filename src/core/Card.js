@@ -7,7 +7,6 @@ import { Link } from 'react-router-dom';
 
 const Card = ({
     product,
-    border,
     showAddToCartButton = true,
     cartUpdate = false,
     showRemoveProductButton = false,
@@ -84,7 +83,7 @@ return (
 export default Card
 
 const Carrd = styled.div`
-    border: ${props => props.border ? props.border : "1px solid rgb(26, 115, 232)" };
+    border: 1px solid rgb(26, 115, 232);
     width: 20rem;
     height: 30rem;
     padding: 1.25rem;
@@ -101,7 +100,6 @@ const Carrd = styled.div`
         max-height: 20rem;
         width: 16rem;
         margin: 1.25rem 1.25rem;
-        ${props => props.border ? props.border : "1px solid rgb(26, 115, 232)" }
     }
 `;
 
