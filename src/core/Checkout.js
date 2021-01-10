@@ -137,6 +137,9 @@ const CheckOutAndAddressContainer = styled.div`
             background-color: rgb(26, 115, 232) !important;
             cursor: pointer !important;
         }
+        @media (max-width: 775px){
+            width:15rem !important;
+        }
     }
 `;
 const AddressContainer = styled.div`
