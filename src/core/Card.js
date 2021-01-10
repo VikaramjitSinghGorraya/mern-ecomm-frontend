@@ -35,7 +35,7 @@ const Card = ({
 
     const displaySkeleton = () =>{
       return(
-              <Skeleton width='20rem' height='30rem'/>
+              <Skeleton width='20rem' height='30rem' style = {{marginRight:'20px'}}/>
       )
     }
 
@@ -84,7 +84,6 @@ return (
 
 export default Card
 
-// 
 const Carrd = styled.div`
     border: 1px solid rgb(26, 115, 232);
     width: 20rem;
