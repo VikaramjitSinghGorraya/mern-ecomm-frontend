@@ -34,7 +34,7 @@ const Card = ({
         }}
 
     const displaySkeleton = () =>{
-      return(<Skeleton width = '20rem' height = '30rem' style = {{marginRight:'1.25rem'}}/>)
+      return(<Skeleton style = {{marginRight:'1.25rem', maxHeight:'30rem', maxWidth:'20rem'}}/>)
     }
 
     const shouldRedirect = redirect => {
