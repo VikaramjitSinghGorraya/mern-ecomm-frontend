@@ -47,8 +47,9 @@ const Checkout = ({ products, setRun = f => f, run = undefined }) =>{
                                     });
                                     if(localStorage.getItem('cart')){
                                         localStorage.removeItem('cart')
+                                        window.location.reload()
                                     }
-                                    <Redirect to='/cart'  />
+                                    
                                 })
                             .catch(error => {
                                 console.log(error);
