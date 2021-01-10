@@ -87,7 +87,7 @@ const Carrd = styled.div`
     width: 20rem;
     height: 30rem;
     padding: 1.25rem;
-    margin: 0 1.25rem 1.1rem auto;
+    margin: 0 1.25rem 1.1rem 1.25rem;
     border-radius: 10px;
     hr{
         width: 95%;
@@ -99,7 +99,7 @@ const Carrd = styled.div`
         min-width: 16rem;
         max-height: 20rem;
         width: 16rem;
-        margin: 0 1.25rem 1.1rem auto;
+        margin: 1.25rem 1.25rem;
     }
 `;
 

@@ -128,7 +128,7 @@ const ShowItemsContainer = styled.div`
     align-items: center;
 
     @media (max-width: 775px){
-        grid-template-columns: repeat(1, 95%);
+        grid-template-columns: repeat(1, 100%);
         justify-content: center;
         align-items: center;
     }

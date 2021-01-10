@@ -210,13 +210,15 @@ const SearchByNameContainer = styled.div`
 `;
 
 const SearchResults = styled.div`
-    display: grid;                               
-    grid-template-columns: 20% 20% 20%; 
-    justify-content: center;
+    display: flex;
+    justify-content: space-around;
     align-items: center;
-
+    flex-wrap: wrap;
     @media (max-width: 775px){
-        grid-template-columns: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
     /* padding: 1.25rem; */
 `;
