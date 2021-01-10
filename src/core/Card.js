@@ -75,10 +75,10 @@ const Card = ({
 
 
 return (
-    <div>
-    {loading &&<div style = {{margin:'auto'}}>{displaySkeleton()}</div> }
+    <>
+    {loading && displaySkeleton()}
     {!loading && displayCard()}
-    </div>
+    </>
 )
 }
 
@@ -91,7 +91,6 @@ const StyledSekelton = styled(Skeleton)`
         min-width: 16rem;
         max-height: 20rem;
         width: 16rem;
-        margin-right: 1.25rem;
     }
 `;
 const Carrd = styled.div`

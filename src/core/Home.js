@@ -66,7 +66,7 @@ const Home = () =>{
 
 export default Home
 const CardContainer = styled.div`
-    /* padding: 1.25rem; */
+    padding: 1.25rem 0;
     overflow-x: auto;
     display: flex;
     margin: 0 auto;
