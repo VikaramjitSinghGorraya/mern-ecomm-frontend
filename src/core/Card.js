@@ -35,7 +35,7 @@ const Card = ({
 
     const displaySkeleton = () =>{
       return(
-              <Skeleton width = '20rem' height = '30rem'/>
+              <StyledSekelton/>
       )
     }
 
@@ -84,6 +84,16 @@ return (
 
 export default Card
 
+const StyledSekelton = styled(Skeleton)`
+     width: 20rem;
+    height: 30rem;
+    @media (max-width: 775px){
+        min-width: 16rem;
+        max-height: 20rem;
+        width: 16rem;
+        margin: 1.25rem 1.25rem;
+    }
+`;
 const Carrd = styled.div`
     border: 1px solid rgb(26, 115, 232);
     width: 20rem;
