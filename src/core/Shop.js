@@ -211,8 +211,12 @@ const SearchByNameContainer = styled.div`
 
 const SearchResults = styled.div`
     display: grid;                               
-    grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr)); 
+    grid-template-columns: 20% 20% 20%; 
     justify-content: center;
     align-items: center;
+
+    @media (max-width: 775px){
+        grid-template-columns: 100%;
+    }
     /* padding: 1.25rem; */
 `;
