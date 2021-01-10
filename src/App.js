@@ -25,8 +25,9 @@ function App() {
           <Route  path = '/userdashboard/:userId' exact  component = {UserDashboard}/>
           <Route  path = '/userdashboard/update/:userId' exact component = {UpdateUser}/>
         </Switch>
+        <Menu/>
       </BrowserRouter>
-      <Menu/>
+     
     </>
   );
 }
