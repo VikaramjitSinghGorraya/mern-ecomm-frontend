@@ -14,7 +14,6 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
-      <div>
       <Switch>
           <Route  path = '/'  exact component = {Home}/>
           <Route  path = '/signin' exact component = {Signin}/>
@@ -26,8 +25,6 @@ function App() {
           <Route  path = '/userdashboard/:userId' exact  component = {UserDashboard}/>
           <Route  path = '/userdashboard/update/:userId' exact component = {UpdateUser}/>
         </Switch>
-        <Menu/>
-      </div>
       </BrowserRouter>
     </div>
   );

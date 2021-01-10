@@ -2,7 +2,7 @@ import React from 'react'
 import Logo from '../Images/Icon.png'
 import styled from 'styled-components'
 import axios from 'axios'
-import {Link} from 'react-router-dom'
+import {Link,withRouter} from 'react-router-dom'
 const Menu = () =>{
     const handleNavbar = () =>{
         document.getElementById('navbar').style.height==="330px"?document.getElementById('navbar').style.height="60px":document.getElementById('navbar').style.height="330px"
@@ -55,7 +55,7 @@ const Menu = () =>{
     )
 }
 
-export default Menu
+export default withRouter(Menu);
 
 const OuterContainer = styled.div`
     width: 80%;
