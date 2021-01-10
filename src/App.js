@@ -12,8 +12,10 @@ import {BrowserRouter, Switch, Route} from 'react-router-dom'
 
 function App() {
   return (
-    <>
-        <Switch>
+    <div className="App">
+      <BrowserRouter>
+      <div>
+      <Switch>
           <Route  path = '/'  exact component = {Home}/>
           <Route  path = '/signin' exact component = {Signin}/>
           <Route  path = '/signup' exact component = {Signup}/>
@@ -25,7 +27,9 @@ function App() {
           <Route  path = '/userdashboard/update/:userId' exact component = {UpdateUser}/>
         </Switch>
         <Menu/>
-    </>
+      </div>
+      </BrowserRouter>
+    </div>
   );
 }
 
