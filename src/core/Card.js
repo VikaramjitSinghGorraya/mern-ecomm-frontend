@@ -77,7 +77,7 @@ const Card = ({
 return (
     <div>
 
-    {loading && <div style={{margin:'auto'}}>displaySkeleton()</div>}
+    {loading && <div style={{margin:'auto'}}>{displaySkeleton()}</div>}
     {!loading && displayCard()}
     </div>
 )
