@@ -35,16 +35,16 @@ const Menu = () =>{
                 </NavIconContainer>
             </HeadingAndNavCionContainer>
             <OptionsContainer>
-                <li><AccessiblityLink to = '/'>HOME</AccessiblityLink></li>
-                <li><AccessiblityLink to = '/shop'>SHOP</AccessiblityLink></li>
-                <li><AccessiblityLink to = '/cart'>CART</AccessiblityLink></li>
+                <li><AccessiblityLink onClick = {handleNavbar} to = '/'>HOME</AccessiblityLink></li>
+                <li><AccessiblityLink onClick = {handleNavbar} to = '/shop'>SHOP</AccessiblityLink></li>
+                <li><AccessiblityLink onClick = {handleNavbar} to = '/cart'>CART</AccessiblityLink></li>
                 <li><hr/></li>
             </OptionsContainer>
             <SingingContainer>
             {isSignedIn() && <button onClick = {handleUserRedirect}><i className="fa fa-user-circle"></i></button>}
             {isSignedIn() && <button onClick = {handleSignout}><i className="fa fa-sign-out-alt"></i>SIGNOUT</button>}
-            {!isSignedIn() && <LoginLinks to ='/signin'><i className = "fa fa-sign-in"></i>SIGNIN</LoginLinks>}
-            {!isSignedIn() && <LoginLinks to = '/signup'><i className="fa fa-user-plus"></i>SIGNUP</LoginLinks>}
+            {!isSignedIn() && <LoginLinks onClick = {handleNavbar} to ='/signin'><i className = "fa fa-sign-in"></i>SIGNIN</LoginLinks>}
+            {!isSignedIn() && <LoginLinks onClick = {handleNavbar} to = '/signup'><i className="fa fa-user-plus"></i>SIGNUP</LoginLinks>}
             </SingingContainer>
             <GitLinkContainer>
             <p>DEVELOPED BY <span> VIKARAMJIT SINGH</span></p>
@@ -55,7 +55,7 @@ const Menu = () =>{
     )
 }
 
-export default withRouter(Menu);
+export default Menu;
 
 const OuterContainer = styled.div`
     width: 80%;
