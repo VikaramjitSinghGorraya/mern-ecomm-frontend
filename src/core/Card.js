@@ -35,9 +35,7 @@ const Card = ({
 
     const displaySkeleton = () =>{
       return(
-          <div>
-              <Skeleton maxwidth = '20rem' height = '30rem' style = {{margin:'auto'}}/>
-          </div>
+              <Skeleton maxwidth = '20rem' height = '30rem'/>
       )
     }
 
@@ -77,10 +75,11 @@ const Card = ({
 
 
 return (
-    <>
-    {loading && displaySkeleton()}
+    <div>
+
+    {loading && <div style={{margin:'auto'}}>displaySkeleton()</div>}
     {!loading && displayCard()}
-    </>
+    </div>
 )
 }
 
