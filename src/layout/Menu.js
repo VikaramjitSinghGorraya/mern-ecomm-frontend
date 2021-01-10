@@ -73,6 +73,7 @@ const OuterContainer = styled.div`
     padding: 10px 20px 10px 20px;
     transition: all 0.2s ease-in-out;
     color: white;
+    z-index:99;
     @media (min-width: 765px){
         flex-direction: row;
         justify-content: space-between;
