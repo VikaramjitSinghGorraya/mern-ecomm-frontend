@@ -36,7 +36,7 @@ const CheckBoxes = ({ categories, handleFilters }) =>{
 
 export default CheckBoxes
 const CheckboxContainer = styled.div`
-        margin: 1.2rem;
+        margin: 1.1rem;
         display: flex;
         label{
             margin-left: 0.12rem;
