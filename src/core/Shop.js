@@ -165,7 +165,7 @@ const SearchByCategoryContainer = styled.div`
 
     @media (max-width: 775px){
         grid-template-columns: 31% 31% 31%;
-        justify-content: start;
+        justify-content: flex-start;
     }
 `;
 const SearchByNameContainer = styled.div`
