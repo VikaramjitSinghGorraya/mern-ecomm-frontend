@@ -40,6 +40,6 @@ const CheckboxContainer = styled.div`
         display: flex;
         label{
             margin-left: 0.12rem;
-            font-size: 80%;
+            font-size: 90%;
         }
 `;
