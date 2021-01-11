@@ -212,13 +212,12 @@ const SearchByNameContainer = styled.div`
 const SearchResults = styled.div`
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    /* align-items: center; */
     flex-wrap: wrap;
     @media (max-width: 775px){
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center;
         padding-right: 1.25rem; 
     }
     /* padding: 1.25rem; */

@@ -205,7 +205,7 @@ const AddToCartButton = styled.button`
     border-radius: 20px;
     height: 30px;
     border: none;
-    width:135px;
+    /* width:135px; */
     outline: none;
     font-size: 1.1rem;
     :hover{
