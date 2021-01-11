@@ -88,7 +88,7 @@ const Shop = () =>{
                             <div><span>SEARCH BY NAME</span></div>
                             <SearchByNameContainer>
                                 <form onSubmit = {loadProductsBySearchedName}>
-                                    <input  required name = 'search' type = 'search' onChange = {changeHandler} placeholder = 'Product name...'/>
+                                    <input  required name = 'search' type = 'search' onChange = {changeHandler} placeholder = 'Name...'/>
                                     <button > SEARCH</button>
                                 </form>
                             </SearchByNameContainer>   
@@ -193,7 +193,7 @@ const SearchByNameContainer = styled.div`
 
                 @media (max-width:775px){
                     ::placeholder{
-                        font-size: 70%;
+                        font-size: 80%;
                     }
                 }
             }
