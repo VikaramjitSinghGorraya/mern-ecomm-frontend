@@ -88,7 +88,7 @@ const Shop = () =>{
                             <div><span>SEARCH BY NAME</span></div>
                             <SearchByNameContainer>
                                 <form onSubmit = {loadProductsBySearchedName}>
-                                    <input  required name = 'search' type = 'search' onChange = {changeHandler} placeholder = 'Enter name of product here...'/>
+                                    <input  required name = 'search' type = 'search' onChange = {changeHandler} placeholder = 'Product name...'/>
                                     <button > SEARCH</button>
                                 </form>
                             </SearchByNameContainer>   
@@ -164,7 +164,7 @@ const SearchByCategoryContainer = styled.div`
     align-items:center;
 
     @media (max-width: 775px){
-        grid-template-columns: 33% 33% 33%;
+        grid-template-columns: 31% 31% 31%;
         justify-content: start;
     }
 `;
