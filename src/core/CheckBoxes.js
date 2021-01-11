@@ -38,6 +38,7 @@ export default CheckBoxes
 const CheckboxContainer = styled.div`
         margin: 1.2rem;
         display: flex;
+        align-items: center;
         label{
             margin-left: 0.12rem;
             font-size: 90%;
