@@ -164,7 +164,7 @@ const SearchByCategoryContainer = styled.div`
     align-items:center;
 
     @media (max-width: 775px){
-        grid-template-columns: 30% 30% 30%;
+        grid-template-columns: 33% 33% 33%;
         justify-content: start;
     }
 `;
@@ -189,6 +189,12 @@ const SearchByNameContainer = styled.div`
                 border-bottom-left-radius: 8px;
                 ::placeholder{
                     color: rgb(26, 115, 232);
+                }
+
+                @media (max-width:775px){
+                    ::placeholder{
+                        font-size: 70%;
+                    }
                 }
             }
 
