@@ -5,7 +5,7 @@ import {addItem} from './CartHelpers'
 import {read, listRelated} from './ApiCore'
 import {Redirect } from 'react-router-dom';
 import styled from 'styled-components';
-
+import Menu from '../layout/Menu'
 const ViewProduct = (props) =>{
     var productId = props.match.params.productId
     const [productDetails, setProductDetails] = useState([])
@@ -74,6 +74,7 @@ const ViewProduct = (props) =>{
                     ))}
                 </RelatedProductsCotaier>
             </OuterContainer>
+            <Menu/>
         </>
     )
 }

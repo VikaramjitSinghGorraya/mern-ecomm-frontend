@@ -2,7 +2,7 @@ import React, {useEffect, useState} from 'react'
 import Layout from '../layout/Layout'
 import axios from 'axios'
 import styled from 'styled-components'
-
+import Menu from '../layout/Menu'
 const UpdateUser = (props) =>{
 
     const [userData, setUserData] = useState({
@@ -79,6 +79,7 @@ const UpdateUser = (props) =>{
                         </EnterButton>
                     </ButtonsContainer>
                 </SignupForm>
+                <Menu/>
             </OuterContainer>
         )
     }

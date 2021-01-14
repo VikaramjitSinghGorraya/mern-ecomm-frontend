@@ -5,7 +5,7 @@ import Layout from '../layout/Layout'
 import Card from './Card'
 import Checkout from '../core/Checkout'
 import { Link } from 'react-router-dom';
-
+import Menu from '../layout/Menu'
 
 const Cart = () =>{
 
@@ -97,6 +97,7 @@ const Cart = () =>{
             <Layout title = 'Your Cart' description = 'Where wishes come true' icon = 'fa fa-shopping-cart'/>
             <OuterContainer>
             {items.length > 0 ? showCartItems() : emptyShoppingCartScreen()}
+            <Menu/>
             </OuterContainer>
         </>
     )

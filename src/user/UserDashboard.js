@@ -6,6 +6,7 @@ import {Redirect} from 'react-router-dom'
 import {getOrders} from '../core/ApiCore'
 import Order from '../core/Order'
 import {Link} from 'react-router-dom'
+import Menu from '../layout/Menu'
 const UserDashboard = (props) =>{
     const [userData, setUserData] = useState({
         name: '',
@@ -77,6 +78,7 @@ const UserDashboard = (props) =>{
                         }
                     </PurchaeHistoryContainer>
                 </OuterContainer>
+                <Menu/>
             </>
         )
     }

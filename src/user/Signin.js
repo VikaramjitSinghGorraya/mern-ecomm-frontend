@@ -4,6 +4,7 @@ import styled from 'styled-components'
 import axios from 'axios'
 import {Redirect} from 'react-router-dom'
 import {Link} from 'react-router-dom'
+import Menu from '../layout/Menu'
 
 const Signin = () =>{
 
@@ -65,6 +66,7 @@ const Signin = () =>{
                     </EnterButton>
                 </ButtonsContainer>
                 </SignupForm>
+                <Menu/>
             </OuterContainer>
         )
     }

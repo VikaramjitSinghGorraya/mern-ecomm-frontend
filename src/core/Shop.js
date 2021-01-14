@@ -5,7 +5,7 @@ import Card from './Card'
 import axios from 'axios'
 import styled from 'styled-components'
 import {getCategory, getProducts} from './ApiCore'
-
+import Menu from '../layout/Menu'
 const Shop = () =>{
     
     const [myFilters, setMyFilters] = useState({
@@ -106,6 +106,7 @@ const Shop = () =>{
                     
                     </SearchResults>
             </OuterContainer>
+            <Menu/>
             </div>
         )
     }
