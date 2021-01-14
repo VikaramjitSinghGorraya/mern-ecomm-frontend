@@ -94,6 +94,9 @@ const SpinnerIcon = styled.i`
 `;
 const SpinnerContainer = styled.div`
     text-align: center;
+    min-height: 100%;
+    min-width: 100%;
+    background-color: red;
 `;
 const NewArrivalsContainer = styled.div`
 margin: 50px auto;
