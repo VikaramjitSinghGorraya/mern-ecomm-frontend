@@ -26,7 +26,7 @@ const Home = () =>{
         setTimeout(() =>(
             getProductsByArrival(),
             getProductsBySale()
-        ),1000)
+        ),2000)
           
     }, [])
 
@@ -60,8 +60,8 @@ const Home = () =>{
     }
     return (
         <div>
-            {/* {productsByArrival.length > 0 && productsBySale.length > 0 && showProducts()} */}
-              <i className="fa fa-circle-o-notch" style={{fontSize:"48px", color: "white"}}/>
+            {productsByArrival.length > 0 && productsBySale.length > 0 && showProducts()}
+              <i className="fa fa-circle-o-notch" style={{fontSize:"48px", color: "rgb(26, 115, 232)"}}/>
 
         </div>
     )
