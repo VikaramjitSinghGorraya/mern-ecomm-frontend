@@ -75,7 +75,7 @@ const Home = () =>{
 export default Home
 const OuterContainer = styled.div`
     min-height: 100%;
-    text-align: center;
+    position: relative;
 `;
 const CardContainer = styled.div`
     padding: 1.25rem 0;
@@ -94,6 +94,13 @@ const CardContainer = styled.div`
 const SpinnerIcon = styled.i`
     color: rgb(26, 115, 232);
     font-size: 52px;
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    top: 50%;
+    left: 50%;
+    margin-left: -50px;
+    margin-top: -50px;
 `;
 const SpinnerContainer = styled.div`
     text-align: center;
