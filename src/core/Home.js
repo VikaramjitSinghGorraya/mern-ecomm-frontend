@@ -26,7 +26,7 @@ const Home = () =>{
         setTimeout(() =>(
             getProductsByArrival(),
             getProductsBySale()
-        ),2000)
+        ),1000)
           
     }, [])
     const showSipnner = () =>{
@@ -94,7 +94,7 @@ const CardContainer = styled.div`
 
 const SpinnerIcon = styled.i`
     color: rgb(26, 115, 232);
-    font-size: 52px;
+    font-size: 42px;
     position: fixed;
     top: 50%;
     left: 50%;
