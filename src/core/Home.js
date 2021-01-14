@@ -31,7 +31,9 @@ const Home = () =>{
     }, [])
     const showSipnner = () =>{
         return(
-            <SpinnerIcon className = 'fa fa-circle-o-notch fa-spin'/>
+            <SpinnerContainer>
+                 <SpinnerIcon className = 'fa fa-circle-o-notch fa-spin'/>
+            </SpinnerContainer>
         )
     }
     const showProducts = () =>{
@@ -88,6 +90,9 @@ const CardContainer = styled.div`
 const SpinnerIcon = styled.i`
     color: rgb(26, 115, 232);
     font-size: 52px;
+`;
+const SpinnerContainer = styled.div`
+    text-align: center;
 `;
 const NewArrivalsContainer = styled.div`
 margin: 50px auto;
