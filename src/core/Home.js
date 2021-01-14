@@ -61,7 +61,7 @@ const Home = () =>{
     return (
         <div>
             {productsByArrival.length > 0 && productsBySale.length > 0 && showProducts()}
-            {productsByArrival.length <= 0 && productsBySale.length <= 0 &&  <i className="fa fa-spinner fa-pulse" style={{fontSize:"48px", color: "white"}}/>}
+            {productsByArrival.length <= 0 && productsBySale.length <= 0 &&  <i className="fa fa-circle-o-notch" style={{fontSize:"48px", color: "white"}}/>}
 
         </div>
     )
