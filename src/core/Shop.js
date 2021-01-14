@@ -110,18 +110,17 @@ const Shop = () =>{
             </div>
         )
     }
-    const showSipnner = () =>{
-        return(
-            <SpinnerContainer>
-                 <SpinnerIcon className = 'fa fa-circle-o-notch fa-spin'/>
-            </SpinnerContainer>
-        )
-    }
+    // const showSipnner = () =>{
+    //     return(
+    //         <SpinnerContainer>
+    //              <SpinnerIcon className = 'fa fa-circle-o-notch fa-spin'/>
+    //         </SpinnerContainer>
+    //     )
+    // }
 
     return (
             <>
-                {products.length > 0 && categories.length > 0 && showShopItems()}
-                {products.length <= 0 && categories.length <= 0 && showSipnner()}
+                {showShopItems()}
             </>
     )
 }
