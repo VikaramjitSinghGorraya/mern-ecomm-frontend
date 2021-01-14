@@ -4,7 +4,7 @@ import Layout from '../layout/Layout'
 import Card from './Card'
 import SearchBar from './SearchBar'
 import styled from 'styled-components'
-
+import Menu from '../layout/Menu'
 const Home = () =>{
 
     const [productsBySale, setProductsBySale] = useState([])
@@ -60,6 +60,7 @@ const Home = () =>{
                 </CardContainer>
             </BestSellersContainer>
             </div>
+            <Menu/>
             </div>
            
         )
