@@ -31,8 +31,10 @@ const Shop = () =>{
     }
 
     useEffect(() =>{
-       getCategories()
-        getProduct()
+        setTimeout(() =>(
+            getCategories(),
+            getProduct()
+        ),2000)
     }, [])
 
     const loadProductsBySearchedName = (e) =>{
@@ -69,9 +71,9 @@ const Shop = () =>{
         setSearchBarData({...searchBarData, [e.target.name] : e.target.value})
     }
 
-
-    return (
-            <>
+    const showShopItems = ()=>{
+        return(
+            <div>
                 <Layout title = 'The Shop' description = 'Find the perfrct product' icon = 'fa fa-shopping-bag'/>
                 <OuterContainer>
                     <FilterButtonContainer>
@@ -104,7 +106,22 @@ const Shop = () =>{
                     
                     </SearchResults>
             </OuterContainer>
-        </>
+            </div>
+        )
+    }
+    const showSipnner = () =>{
+        return(
+            <SpinnerContainer>
+                 <SpinnerIcon className = 'fa fa-circle-o-notch fa-spin'/>
+            </SpinnerContainer>
+        )
+    }
+
+    return (
+            <>
+                {products.length > 0 && categories.length > 0 && showShopItems()}
+                {products.length <= 0 && categories.length <= 0 && showSipnner()}
+            </>
     )
 }
 
@@ -113,6 +130,20 @@ export default Shop
 const OuterContainer = styled.div`
     width: 90%;
     margin: 50px auto 100px auto;
+`;
+const SpinnerIcon = styled.i`
+    color: rgb(26, 115, 232);
+    font-size: 52px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+`;
+const SpinnerContainer = styled.div`
+    text-align: center;
+    margin-top: auto;
+    min-height:100%;
+    background-color: red;
 `;
 const FilterButtonContainer = styled.div`
     margin-bottom: 10px;
