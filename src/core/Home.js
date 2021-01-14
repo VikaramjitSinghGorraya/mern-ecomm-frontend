@@ -23,8 +23,11 @@ const Home = () =>{
     }
 
     useEffect(() =>{
-            getProductsByArrival()
+        setTimeout(() =>(
+            getProductsByArrival(),
             getProductsBySale()
+        ),1000)
+          
     }, [])
 
     const showProducts = () =>{
