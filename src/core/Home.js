@@ -95,10 +95,12 @@ const CardContainer = styled.div`
 const SpinnerIcon = styled.i`
     color: rgb(26, 115, 232);
     font-size: 42px;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    position: absolute;
+    margin: auto;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
 `;
 const SpinnerContainer = styled.div`
     text-align: center;
