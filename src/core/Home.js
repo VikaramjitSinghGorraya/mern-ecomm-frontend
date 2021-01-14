@@ -65,14 +65,18 @@ const Home = () =>{
         )
     }
     return (
-        <div>
+        <OuterContainer >
             {productsByArrival.length > 0 && productsBySale.length > 0 && showProducts()}
             {productsByArrival.length <= 0 && productsBySale.length <= 0 && showSipnner()}
-        </div>
+        </OuterContainer >
     )
 }
 
 export default Home
+const OuterContainer = styled.div`
+    min-height: 100%;
+    text-align: center;
+`;
 const CardContainer = styled.div`
     padding: 1.25rem 0;
     overflow-x: auto;
