@@ -39,9 +39,8 @@ const Home = () =>{
     const showProducts = () =>{
         return(
             <div>
-                     <Layout title  = 'My Store' description = 'Yours To Explore' icon = 'fa fa-home'/>
-            
-            <div className = 'animate__animated animate__fadeIn animate__delay-900ms'>
+                <Layout title  = 'My Store' description = 'Yours To Explore' icon = 'fa fa-home'/>
+            <div className = 'animate__animated animate__fadeInUp'>
             <SearchBar/>
             <NewArrivalsContainer >
                 <p>NEW ARRIVALS</p>
