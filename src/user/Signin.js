@@ -35,7 +35,7 @@ const Signin = () =>{
 
     const signinForm = () =>{
         return (
-        <OuterContainer className = 'animate__animated animate__fadeIn'>
+        <OuterContainer className = 'animate__animated animate__fadeInUp'>
                     <Disclaimer>
                     <span>DISCLAIMER</span>
                     <p>
