@@ -40,7 +40,7 @@ const Home = () =>{
         return(
             <div>
                 <Layout title  = 'My Store' description = 'Yours To Explore' icon = 'fa fa-home'/>
-            <div className = 'animate__animated animate__fadeInUp'>
+            <div className = 'animate__animated animate__fadeInUp animate__delay-900ms'>
             <SearchBar/>
             <NewArrivalsContainer >
                 <p>NEW ARRIVALS</p>
