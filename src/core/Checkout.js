@@ -1,9 +1,8 @@
-import React,{useState, useEffect} from 'react'
-import {getBraintreeClientToken, processPayment, createOrder} from './ApiCore'
-import {totalPrice, totalQuantity, emptyCart} from './CartHelpers'
+import React,{useState} from 'react'
+import {processPayment, createOrder} from './ApiCore'
+import {totalPrice} from './CartHelpers'
 import styled from 'styled-components'
 import StripeCheckout from 'react-stripe-checkout'
-import  { Redirect } from 'react-router-dom'
 
 const Checkout = ({ products, setRun = f => f, run = undefined }) =>{
     
@@ -22,9 +21,7 @@ const Checkout = ({ products, setRun = f => f, run = undefined }) =>{
 
     if(sessionStorage.getItem('token')){
         userId = JSON.parse(sessionStorage.getItem('token')).user._id
-        
     }
-
     
     const buy = (token) => {
         const body = {
@@ -66,23 +63,7 @@ const Checkout = ({ products, setRun = f => f, run = undefined }) =>{
 
     const showDropin = () =>(
             
-            <CheckOutAndAddressContainer>
-                {/* <AddressContainer>
-                    {/* <div>
-                        <label>Address Line 1</label>
-                        <input name = 'addressLine' placeholder = 'Address line 1 here...' type = 'text' value = {data.addressLine} onChange = {handleAddress} required/>
-                    </div>
-                    
-                    <div>
-                        <label>State</label>
-                        <input name = 'state' placeholder = 'Your stete here...' type = 'text' value = {data.state} onChange = {handleAddress} required/>
-                    </div>
-                    
-                    <div>
-                        <label>Zipcode</label>
-                        <input name = 'zipcode' placeholder = 'Your zip code here...' type = 'number' min = '1' value = {data.ZipCode} onChange = {handleAddress} required/>
-                    </div> */}
-                {/* </AddressContainer> */} 
+            <CheckOutAndAddressContainer> 
                 <CheckoutContainer >
                     {products.length >= 1 ?
                         <StripeCheckout
@@ -112,9 +93,6 @@ const Checkout = ({ products, setRun = f => f, run = undefined }) =>{
                             </div>
                         </ ExpiryAndCVV>
                     </CardInfoContainer>
-                    {/* <CardInfoContainer>
-                        Note: - Use number 4242424242424242 for card, any 3 digit for CVV and future date for expiry date.
-                    </CardInfoContainer> */}
                       </StripeCheckout>
                             :
                             null

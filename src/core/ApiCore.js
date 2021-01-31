@@ -24,14 +24,6 @@ export const getCategory = () => (
         .catch(err => {return err})
 )
 
-// export const getToken = () =>{
-//     if(sessionStorage.getItem('token')){
-//         const config = {header:{"Authorization": `Bearer ${JSON.parse(sessionStorage.getItem('token')).token}`}} 
-//         return config
-//     }
-//     return ''
-// }
-
 export const getBraintreeClientToken = (userId, token) => (
     axios.get(`https://myecommstore.herokuapp.com/api/braintree/getToken/${userId}`, { headers: { "Authorization": `Bearer ${token}` } })
         .then(res => {return res.data})

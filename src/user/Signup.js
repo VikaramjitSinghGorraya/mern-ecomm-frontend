@@ -121,7 +121,6 @@ const OuterContainer = styled.div`
     row-gap: 10px;
     width: 90%;
     margin: 50px auto 100px auto;
-
 `;
 
 const Disclaimer = styled.div`

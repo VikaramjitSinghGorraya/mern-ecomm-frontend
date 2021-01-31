@@ -116,13 +116,6 @@ const Shop = () =>{
             </div>
         )
     }
-    // const showSipnner = () =>{
-    //     return(
-    //         <SpinnerContainer>
-    //              <SpinnerIcon className = 'fa fa-circle-o-notch fa-spin'/>
-    //         </SpinnerContainer>
-    //     )
-    // }
 
     return (
             <>
@@ -156,12 +149,7 @@ const SpinnerIcon = styled.i`
     left: 50%;
     transform: translate(-50%, -50%);
 `;
-// const SpinnerContainer = styled.div`
-//     text-align: center;
-//     margin-top: auto;
-//     min-height:100%;
-//     background-color: red;
-// `;
+
 const FilterButtonContainer = styled.div`
     margin-bottom: 10px;
     button{

@@ -89,12 +89,6 @@ const CardContainer = styled.div`
     
 `;
 
-const SpinnerIcon = styled.i`
-    /* color: rgb(26, 115, 232);
-    font-size: 42px;
- border: 1px solid; */
-  
-`;
 const SpinnerContainer = styled.div`
     position: fixed;
   z-index: 1;

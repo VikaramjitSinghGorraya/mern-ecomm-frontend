@@ -1,8 +1,6 @@
 import React, {useState} from 'react'
 import styled from 'styled-components'
 
-
-
 const CheckBoxes = ({ categories, handleFilters }) =>{
 
     const [checked, setCheked] = useState([]);

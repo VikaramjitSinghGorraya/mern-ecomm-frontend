@@ -10,7 +10,6 @@ const RelatedProductsCards = ({product}) =>{
             </div>
         )
     }
-
     
     return (
             <Card>
