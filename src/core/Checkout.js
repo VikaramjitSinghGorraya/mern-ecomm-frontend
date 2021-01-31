@@ -195,7 +195,6 @@ const CardInfoContainer = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    border: 1px solid rgb(26, 115, 232);
     border-radius: 10px;
     background:linear-gradient(152deg, #004efe 0%, #00acfe 60%, #68ceff 100%);
     padding: 0 3rem;
