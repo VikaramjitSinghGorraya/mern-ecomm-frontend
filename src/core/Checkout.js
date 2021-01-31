@@ -94,9 +94,27 @@ const Checkout = ({ products, setRun = f => f, run = undefined }) =>{
                     <button >
                         Pay
                     </button>
-                    <CardInfoContainer>
+                    <div class="card-body">
+                        <div class="flex-container flex-spaceBetween head flex-conteiner-row">
+                            <p>Demo Credit Card</p><i class="fas fa-credit-card"></i>
+                        </div>
+                        <div class="card-number">
+                            <p class="">4111 1111 1111 1111</p>
+                        </div>
+                        <div class="flex-container flex-spaceBetween flex-conteiner-row">
+                            <div>
+                                <span>exp date</span>
+                                <p class="exp-date">11/22</p>
+                            </div>
+                            <div class="cvv-no">
+                                <span>CVV</span>
+                                <p class="">123</p>
+                            </div>
+                        </div>
+                    </div>
+                    {/* <CardInfoContainer>
                         Note: - Use number 4242424242424242 for card, any 3 digit for CVV and future date for expiry date.
-                    </CardInfoContainer>
+                    </CardInfoContainer> */}
                       </StripeCheckout>
                             :
                             null
