@@ -99,12 +99,12 @@ const Checkout = ({ products, setRun = f => f, run = undefined }) =>{
                             <p>Demo Credit Card</p><i class="fa fa-credit-card"></i>
                         </CardHeadingAndIcon>
                         <CardNumber>
-                            <p class="">4111 1111 1111 1111</p>
+                            <p class="">4242 4242 4242 4242</p>
                         </CardNumber>
                         < ExpiryAndCVV>
                             <div>
                                 <span>exp date</span>
-                                <p class="exp-date">11/22</p>
+                                <p class="exp-date">11/24</p>
                             </div>
                             <div class="cvv-no">
                                 <span>CVV</span>
