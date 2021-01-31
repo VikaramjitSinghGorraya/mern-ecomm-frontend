@@ -173,4 +173,6 @@ const AddressContainer = styled.div`
 `;
 const CheckoutContainer = styled.div`
 `;
-const CardInfoContainer = styled.div``;
+const CardInfoContainer = styled.div`
+    max-width: 500px;
+`;
