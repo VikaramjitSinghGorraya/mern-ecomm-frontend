@@ -158,9 +158,9 @@ const CheckOutAndAddressContainer = styled.div`
             background-color: rgb(26, 115, 232) !important;
             cursor: pointer !important;
         }
-        /* @media (max-width: 775px){
-            width:15rem !important;
-        } */
+        @media (max-width: 775px){
+            width:300px !important;
+        }
     }
 `;
 const AddressContainer = styled.div`
@@ -201,6 +201,7 @@ const CardInfoContainer = styled.div`
     padding: 0 3rem;
     @media (max-width: 775px){
         max-width: 300px;
+        margin: auto;
     }
 `;
 const CardHeadingAndIcon = styled.div`
