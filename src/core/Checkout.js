@@ -94,6 +94,9 @@ const Checkout = ({ products, setRun = f => f, run = undefined }) =>{
                     <button >
                         Pay
                     </button>
+                    <CardInfoContainer>
+                        Note: - Use number 4242424242424242 for card, any 3 digit for CVV and future date for expiry date.
+                    </CardInfoContainer>
                       </StripeCheckout>
                             :
                             null
@@ -170,3 +173,4 @@ const AddressContainer = styled.div`
 `;
 const CheckoutContainer = styled.div`
 `;
+const CardInfoContainer = styled.div``;
