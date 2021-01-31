@@ -199,6 +199,9 @@ const CardInfoContainer = styled.div`
     border-radius: 10px;
     background:linear-gradient(152deg, #004efe 0%, #00acfe 60%, #68ceff 100%);
     padding: 0 3rem;
+    @media (max-width: 775px){
+        max-width: 300px;
+    }
 `;
 const CardHeadingAndIcon = styled.div`
     display: flex;
