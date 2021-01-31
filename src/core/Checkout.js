@@ -94,14 +94,14 @@ const Checkout = ({ products, setRun = f => f, run = undefined }) =>{
                     <button >
                         Pay
                     </button>
-                    <div class="card-body">
-                        <div class="flex-container flex-spaceBetween head flex-conteiner-row">
-                            <p>Demo Credit Card</p><i class="fas fa-credit-card"></i>
-                        </div>
-                        <div class="card-number">
+                    <CardInfoContainer>
+                        <CardHeadingAndIcon>
+                            <p>Demo Credit Card</p><i class="fa fa-credit-card"></i>
+                        </CardHeadingAndIcon>
+                        <CardNumber>
                             <p class="">4111 1111 1111 1111</p>
-                        </div>
-                        <div class="flex-container flex-spaceBetween flex-conteiner-row">
+                        </CardNumber>
+                        < ExpiryAndCVV>
                             <div>
                                 <span>exp date</span>
                                 <p class="exp-date">11/22</p>
@@ -110,8 +110,8 @@ const Checkout = ({ products, setRun = f => f, run = undefined }) =>{
                                 <span>CVV</span>
                                 <p class="">123</p>
                             </div>
-                        </div>
-                    </div>
+                        </ ExpiryAndCVV>
+                    </CardInfoContainer>
                     {/* <CardInfoContainer>
                         Note: - Use number 4242424242424242 for card, any 3 digit for CVV and future date for expiry date.
                     </CardInfoContainer> */}
@@ -192,5 +192,20 @@ const AddressContainer = styled.div`
 const CheckoutContainer = styled.div`
 `;
 const CardInfoContainer = styled.div`
-    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+`;
+const CardHeadingAndIcon = styled.div`
+    display: flex;
+    justify-content: space-around;
+`;
+const CardNumber = styled.div`
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 130%;
+    text-shadow: 2px 2px 5px rgb(0 0 0 / 40%);
+`;
+const ExpiryAndCVV = styled.div`
+    display: flex;
+    justify-content: space-around;
 `;
