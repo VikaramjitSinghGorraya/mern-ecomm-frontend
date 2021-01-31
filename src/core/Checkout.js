@@ -196,10 +196,11 @@ const CardInfoContainer = styled.div`
     flex-direction: column;
     justify-content: space-between;
     border: 1px solid rgb(26, 115, 232);
+    padding: 0 3rem;
 `;
 const CardHeadingAndIcon = styled.div`
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 `;
 const CardNumber = styled.div`
