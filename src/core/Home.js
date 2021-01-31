@@ -31,9 +31,7 @@ const Home = () =>{
     }, [])
     const showSipnner = () =>{
         return(
-            <SpinnerContainer>
-                 {/* <SpinnerIcon className = 'fa fa-circle-o-notch fa-spin'/> */}
-            </SpinnerContainer>
+            <SpinnerContainer/>
         )
     }
     const showProducts = () =>{
