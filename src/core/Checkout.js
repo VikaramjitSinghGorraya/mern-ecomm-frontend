@@ -158,9 +158,9 @@ const CheckOutAndAddressContainer = styled.div`
             background-color: rgb(26, 115, 232) !important;
             cursor: pointer !important;
         }
-        @media (max-width: 775px){
+        /* @media (max-width: 775px){
             width:15rem !important;
-        }
+        } */
     }
 `;
 const AddressContainer = styled.div`
@@ -195,12 +195,12 @@ const CardInfoContainer = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: center;
-    border: 1px solid solid rgb(26, 115, 232);
+    border: 1px solid rgb(26, 115, 232);
 `;
 const CardHeadingAndIcon = styled.div`
     display: flex;
     justify-content: space-around;
+    align-items: center;
 `;
 const CardNumber = styled.div`
     text-transform: uppercase;
@@ -210,5 +210,5 @@ const CardNumber = styled.div`
 `;
 const ExpiryAndCVV = styled.div`
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 `;
