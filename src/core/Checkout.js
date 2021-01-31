@@ -194,6 +194,9 @@ const CheckoutContainer = styled.div`
 const CardInfoContainer = styled.div`
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid solid rgb(26, 115, 232);
 `;
 const CardHeadingAndIcon = styled.div`
     display: flex;
