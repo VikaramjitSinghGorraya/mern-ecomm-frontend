@@ -196,20 +196,25 @@ const CardInfoContainer = styled.div`
     flex-direction: column;
     justify-content: space-between;
     border: 1px solid rgb(26, 115, 232);
+    border-radius: 10px;
+    background:linear-gradient(152deg, #004efe 0%, #00acfe 60%, #68ceff 100%);
     padding: 0 3rem;
 `;
 const CardHeadingAndIcon = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
+    color: white;
 `;
 const CardNumber = styled.div`
     text-transform: uppercase;
     font-weight: 700;
     font-size: 130%;
     text-shadow: 2px 2px 5px rgb(0 0 0 / 40%);
+    color: white;
 `;
 const ExpiryAndCVV = styled.div`
     display: flex;
     justify-content: space-between;
+    color: white;
 `;
