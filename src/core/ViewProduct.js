@@ -48,7 +48,7 @@ const ViewProduct = (props) =>{
         {shouldRedirect(redirect)}
             <Layout title = {productDetails.name} description = {productDetails.description} icon = 'fa fa-shopping-basket'/>
             <OuterContainer className = 'animate__animated animate__fadeIn'>
-                <CurrentProudctContainer initial = {{marginTop:100}} animate = {{marginTop:0}} transition = {{duration:0.4}}>
+                <CurrentProudctContainer initial = {{opacity:0}} animate = {{opacity:1}} transition = {{duration:0.8}}>
                     <ImageContainer>
                         <img src = {`https://myecommstore.herokuapp.com/api/product/photo/${productId}`} alt = 'product'/>
                     </ImageContainer>
