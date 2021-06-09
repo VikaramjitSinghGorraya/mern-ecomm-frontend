@@ -41,7 +41,7 @@ const Home = () =>{
                 <Layout title  = 'My Store' description = 'Yours To Explore' icon = 'fa fa-home'/>
             <div className = 'animate__animated animate__fadeInUp animate__delay-900ms'>
             <SearchBar/>
-            <NewArrivalsContainer >
+            <NewArrivalsContainer initial = {{marginTop:100}} animate = {{marginTop:0}} transition = {{duration:0.4}} >
                 <p>NEW ARRIVALS</p>
                 <CardContainer>
                     {productsByArrival.length > 0 && productsByArrival.map((product, index)=>(
@@ -49,7 +49,7 @@ const Home = () =>{
                     ))}
                 </CardContainer>
             </NewArrivalsContainer >
-            <BestSellersContainer>
+            <BestSellersContainer initial = {{marginTop:100}} animate = {{marginTop:0}} transition = {{duration:0.4}}>
                 <p>BEST SELLERS</p>
                 <CardContainer>
                     {productsBySale.length >0 && productsBySale.map((product, index)=>(
@@ -64,7 +64,7 @@ const Home = () =>{
         )
     }
     return (
-        <OuterContainer initial = {{marginTop:100}} animate = {{marginTop:0}} transition = {{duration:0.4}} >
+        <OuterContainer>
             {productsByArrival.length > 0 && productsBySale.length > 0 && showProducts()}
             {productsByArrival.length <= 0 && productsBySale.length <= 0 && showSipnner()}
         </OuterContainer >
@@ -100,7 +100,7 @@ const SpinnerContainer = styled.div`
   background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 50 50'%3E%3Cpath d='M28.43 6.378C18.27 4.586 8.58 11.37 6.788 21.533c-1.791 10.161 4.994 19.851 15.155 21.643l.707-4.006C14.7 37.768 9.392 30.189 10.794 22.24c1.401-7.95 8.981-13.258 16.93-11.856l.707-4.006z'%3E%3CanimateTransform attributeType='xml' attributeName='transform' type='rotate' from='0 25 25' to='360 25 25' dur='0.6s' repeatCount='indefinite'/%3E%3C/path%3E%3C/svg%3E") center / 50px no-repeat;
 
 `;
-const NewArrivalsContainer = styled.div`
+const NewArrivalsContainer = styled(motion.div)`
 margin: 50px auto;
   p{
       padding-left: 1.25rem;
@@ -109,7 +109,7 @@ margin: 50px auto;
   }  
 `;
 
-const BestSellersContainer  = styled.div`
+const BestSellersContainer  = styled(motion.div)`
 margin: 50px auto 100px auto;
      p{
       padding-left: 1.25rem;
