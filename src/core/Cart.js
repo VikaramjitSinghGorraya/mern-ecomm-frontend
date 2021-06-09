@@ -43,7 +43,7 @@ const Cart = () =>{
     const cartSummary = (items) =>{
         return(
             <div>
-            <SummaryTable initial = {{marginTop:100}} animate ={{marginTop:0}} transition = {{duration:0.4}}>
+            <SummaryTable initial = {{opacity:0}} animate ={{opacity:1}} transition = {{duration:0.4}}>
                 <p>Cart Summary</p>
                 <table>
                     <tr>
