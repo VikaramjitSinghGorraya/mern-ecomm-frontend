@@ -63,7 +63,7 @@ const Cart = () =>{
     }
     const emptyShoppingCartScreen = () =>{
         return(
-            <EmptyCartContainer>
+            <EmptyCartContainer initial = {{marginTop:100}} animate ={{marginTop:0}} transition = {{duration:0.4}}>
                 <EmptyShoppingCartIconContainer>
                     <p>
                     <i className = 'fa fa-shopping-cart'/>
@@ -172,7 +172,7 @@ const ShopLink = styled(Link)`
     text-decoration: none;
     color: white;
 `;
-const EmptyCartContainer = styled.div`
+const EmptyCartContainer = styled(motion.div)`
     display: flex;
     flex-direction: column;
     justify-content: center;
