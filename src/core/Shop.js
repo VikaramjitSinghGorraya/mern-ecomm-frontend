@@ -1,4 +1,5 @@
 import React, {useEffect, useState} from 'react'
+import {motion} from 'framer-motion'
 import Layout from '../layout/Layout'
 import CheckBoxes from './CheckBoxes'
 import Card from './Card'
@@ -102,7 +103,7 @@ const Shop = () =>{
                             </SearchByNameContainer>   
                         </SearchOptionsContainer>
                     </FiltersContainer>
-                    <SearchResults>
+                    <SearchResults initial = {{marginTop:100}} animate = {{marginTop:0}} transition = {{duration:0.4}}>
                         {filteredResults.length === 0 && products.map((product, index) =>(
                                 <Card border = 'none' key = {index} product = {product}/>
                             ))}
@@ -251,7 +252,7 @@ const SearchByNameContainer = styled.div`
     }
 `;
 
-const SearchResults = styled.div`
+const SearchResults = styled(motion.div)`
     display: flex;
     justify-content: space-around;
     /* align-items: center; */
