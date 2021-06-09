@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from 'react'
+import {motion} from 'framer-motion'
 import { getCart, totalQuantity, totalPrice} from '../core/CartHelpers';
 import styled from 'styled-components'
 import Layout from '../layout/Layout'
@@ -18,7 +19,7 @@ const Cart = () =>{
 
     const showItems = (items) => {
         return (
-            <ShowItemsContainer>
+            <ShowItemsContainer initial = {{marginTop:100}} animate ={{marginTop:0}} transition = {{duration:0.4}}>
                 
                 {items.map((product, index) => (
                     <div>
@@ -42,7 +43,7 @@ const Cart = () =>{
     const cartSummary = (items) =>{
         return(
             <div>
-            <SummaryTable className = 'animate__animated animate__fadeIn'>
+            <SummaryTable initial = {{marginTop:100}} animate ={{marginTop:0}} transition = {{duration:0.4}}>
                 <p>Cart Summary</p>
                 <table>
                     <tr>
@@ -122,7 +123,7 @@ const CartInformationContainer = styled.div`
     align-items: flex-start;
     flex-wrap: wrap;
 `;
-const ShowItemsContainer = styled.div`
+const ShowItemsContainer = styled(motion.div)`
     display: grid;
     grid-template-columns: repeat(2, 47%);
     justify-content: space-between;
