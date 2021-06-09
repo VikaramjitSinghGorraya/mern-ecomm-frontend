@@ -1,4 +1,5 @@
 import React, {useEffect, useState} from 'react'
+import {motion} from 'framer-motion'
 import Layout from '../layout/Layout'
 import RelatedProductsCards from '../core/RelatedProductsCards'
 import {addItem} from './CartHelpers'
@@ -47,7 +48,7 @@ const ViewProduct = (props) =>{
         {shouldRedirect(redirect)}
             <Layout title = {productDetails.name} description = {productDetails.description} icon = 'fa fa-shopping-basket'/>
             <OuterContainer className = 'animate__animated animate__fadeIn'>
-                <CurrentProudctContainer>
+                <CurrentProudctContainer initial = {{marginTop:100}} animate = {{marginTop:0}} transition = {{duration:0.4}}>
                     <ImageContainer>
                         <img src = {`https://myecommstore.herokuapp.com/api/product/photo/${productId}`} alt = 'product'/>
                     </ImageContainer>
@@ -66,7 +67,7 @@ const ViewProduct = (props) =>{
                     </DetailsContainer>
                 </CurrentProudctContainer>
                 
-                <RelatedProductsCotaier>
+                <RelatedProductsCotaier initial = {{marginTop:100}} animate = {{marginTop:0}} transition = {{duration:0.4}}>
                 <span>RELATED PRODUCTS</span>
                     {relatedProductDetails.length === 0 && !loading && <p> No Products Foud</p>}
                     {relatedProductDetails.map((product, index) =>(
@@ -92,7 +93,7 @@ const OuterContainer = styled.div`
         align-items: flex-start;
     }
 `;
-const CurrentProudctContainer = styled.div`
+const CurrentProudctContainer = styled(motion.div)`
     margin: 0 auto; 
     padding: 1.25rem;
     text-align: center;
@@ -154,7 +155,7 @@ const DetailsContainer = styled.div`
     }
     }
 `;
-const RelatedProductsCotaier = styled.div`
+const RelatedProductsCotaier = styled(motion.div)`
     overflow-x: auto;
     display: flex;
     align-items: flex-start;
