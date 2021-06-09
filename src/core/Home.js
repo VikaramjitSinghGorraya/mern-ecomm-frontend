@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from 'react'
+import {motion} from 'framer-motion'
 import {getProducts} from './ApiCore'
 import Layout from '../layout/Layout'
 import Card from './Card'
@@ -63,7 +64,7 @@ const Home = () =>{
         )
     }
     return (
-        <OuterContainer >
+        <OuterContainer initial = {{marginTop:100}} animate = {{marginTop:0}} transition = {{duration:0.4}} >
             {productsByArrival.length > 0 && productsBySale.length > 0 && showProducts()}
             {productsByArrival.length <= 0 && productsBySale.length <= 0 && showSipnner()}
         </OuterContainer >
@@ -71,7 +72,7 @@ const Home = () =>{
 }
 
 export default Home
-const OuterContainer = styled.div`
+const OuterContainer = styled(motion.div)`
     min-height: 100%;
     position: relative;
 `;
