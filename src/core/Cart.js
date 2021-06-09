@@ -42,7 +42,6 @@ const Cart = () =>{
    
     const cartSummary = (items) =>{
         return(
-            <div>
             <SummaryTable initial = {{opacity:0}} animate ={{opacity:1}} transition = {{duration:0.4}}>
                 <p>Cart Summary</p>
                 <table>
@@ -60,7 +59,6 @@ const Cart = () =>{
                 {sessionStorage.getItem('token') &&  <Checkout products = {items} setRun={setRun} run={run} /> } 
                 {!sessionStorage.getItem('token') && <SignupLink to ='/signup'><button>SIGNUP TO CHECKOUT</button></SignupLink>}
             </SummaryTable> 
-            </div>
         )
     }
     const emptyShoppingCartScreen = () =>{
@@ -135,7 +133,7 @@ const ShowItemsContainer = styled(motion.div)`
         align-items: center;
     }
 `;
-const SummaryTable = styled.div`
+const SummaryTable = styled (motion.div)`
     margin: 10px auto;
     table{
          border-collapse: collapse;
