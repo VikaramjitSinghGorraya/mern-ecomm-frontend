@@ -67,7 +67,7 @@ const ViewProduct = (props) =>{
                     </DetailsContainer>
                 </CurrentProudctContainer>
                 
-                <RelatedProductsCotaier initial = {{marginTop:100}} animate = {{marginTop:0}} transition = {{duration:0.4}}>
+                <RelatedProductsCotaier initial = {{opacity:0}} animate = {{opacity:1}} transition = {{duration:0.4}}>
                 <span>RELATED PRODUCTS</span>
                     {relatedProductDetails.length === 0 && !loading && <p> No Products Foud</p>}
                     {relatedProductDetails.map((product, index) =>(
